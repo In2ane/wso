@@ -3,17 +3,17 @@
     background-size: 100%;
     position: fixed;
     top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size:cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-text-shadow: none;
-z-index: 50;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: none;
+    z-index: 50;
 }
 h1 {
     color: rgba(243, 237, 237, 0.192);
@@ -55,7 +55,14 @@ li {
 }
 ul {
     list-style: none;
+    padding-right: 27px;
 }
 li:hover {
     color: rgb(71, 59, 61);
+}
+@media (max-width:600px) {
+    .rep {display: block; text-align: center;}
+}
+@media (max-width:500px) {
+    .rep > ul > li {font-size: 19px;}
 }
